@@ -1,0 +1,303 @@
+/* CSS FOR HEADER */
+.search-bar {
+  border-radius: 8px 0px 0px 8px;
+  width: 400px;
+}
+
+.search-bar:focus {
+  border-color: #f79210;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.search-button {
+  border-radius: 0px 8px 8px 0px;
+}
+
+/* Media queries for Header */
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+.app-container {
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.row > * {
+  padding: 0.5rem !important;
+
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.card {
+  padding: 0 !important;
+}
+
+.card-img-top {
+  height: 170px;
+  object-fit: contain;
+}
+
+.card-img-top:hover {
+  transform: scale(1.07);
+}
+
+button {
+  background-color: #febd69;
+  border: none;
+  margin: auto;
+  border-radius: 8px;
+  margin: auto;
+}
+
+button:hover {
+  background-color: #f79210;
+}
+.price {
+  color: #f79210;
+}
+
+.add-to-cart {
+  color: black;
+  font-size: 25px;
+}
+
+.card-text {
+  line-height: 1.5em;
+  height: 3em; /* height is 3x line-height, so two lines will display */
+  overflow: hidden; /* prevents extra lines from being visible */
+}
+
+.card {
+  border-radius: 0px !important;
+}
+.card-title {
+  line-height: 0.9em;
+  height: 1.8em;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.logo {
+  height: 3rem;
+  width: 10rem;
+}
+
+/* ========================Cart Page CSS============================= */
+.mainContainer {
+  flex-wrap: wrap;
+}
+
+.items {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.items .card-header {
+  border-radius: 6px 6px 0 0 !important;
+  border: 1px solid rgb(0, 0, 0, 0.175);
+  background-color: #ffcc8a !important;
+}
+.card-header:first-child {
+  background-color: #ffcc8a;
+}
+.q-text {
+  margin-top: -12px;
+}
+.innercols {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-cost {
+  background-color: #ffcc8a;
+}
+
+.cart-img {
+  height: 170px;
+  width: 170px;
+  object-fit: contain;
+}
+.mainContainer button {
+  background-color: #ffcc8a;
+  padding: 5px 12px;
+  font-weight: bolder;
+  border-radius: 6px;
+  border: none;
+}
+.mainContainer button:hover,
+.mainContainer .btn:hover {
+  background-color: #f79210;
+}
+
+.mainContainer .btn {
+  background-color: #ffcc8a;
+}
+
+.mainContainer #quantity {
+  padding: 8px 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mainContainer .total {
+  font-size: 17px;
+}
+/* Media queries */
+@media only screen and (max-width: 900px) {
+  button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .rating {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ================== CSS for Login Screen ============  */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffcc8a;
+  padding: 30px 30px 55px 30px;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login-form input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #f79210;
+}
+
+.login-form button,
+.shipping-form button {
+  background-color: #f79210;
+  border: 2px solid #f79210;
+  padding: 8px;
+  border-radius: 8px;
+  width: 300px;
+  font-size: 18px;
+}
+
+.login-form label,
+.shipping-form label {
+  font-size: 18px;
+}
+
+/* Media queries for Login Page */
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 350px;
+  }
+  .shipping-form {
+    width: 350px !important;
+  }
+  .shipping-form input {
+    width: 300px !important;
+  }
+}
+/* ====================css for shipping form=============== */
+.shipping-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffcc8a;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.shipping-form input {
+  width: 400px;
+  padding: 6px;
+  border: 1px solid #f79210;
+}
+/* ==========================CSS FOR Payment ============================== */
+
+.payment form {
+  width: 250px;
+  background-color: #ffcc8a;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: auto;
+}
+
+.img-thumbnail {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+/*  =========== Sidebar CSS =========== */
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #ffcc8a;
+  transition: 0.5s;
+  color: black;
+}
+
+.app-container {
+  transition: 0.5s;
+}
+
+.active-container {
+  margin-left: 240px;
+}
+
+.active-nav {
+  left: 0;
+}
+
+.search .container {
+  margin-left: calc(1.6 * var(--bs-gutter-x)) !important;
+}
+
+.cart-empty {
+  font-size: 10rem !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -10px;
+}
